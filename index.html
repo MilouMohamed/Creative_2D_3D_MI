@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ 
+
+    <!-- Pour le resize de la calculatrice -->
+    <link rel="stylesheet"
+        href="http://portal.ewebsolutionskech-dev.com/admin/web/js/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 
+
+
+
+  
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>E Web Slo Kech</title>
+</head>
+
+<body>
+    <div class="container">
+        <br> <hr>
+        <h3>Med Milou3 g  20 pas minify avent</h3>
+        <br> <hr><br>
+
+        <button id="btn_insert" class="btn btn-success">Insert 1</button>
+        <button id="btn_show" class="btn btn-success">Show 2</button>
+        <button id="btn_hide" class="btn btn-warning">Hide 3</button>
+        <button id="btn_remove" class="btn btn-danger">remove 4</button>
+
+    </div>
+
+
+        
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+  
+
+            $("#btn_insert").calculator(
+                {
+                    //  Is_draggable:false,
+                    //  Is_resize:false,
+                    langue:"ar"  
+                }
+            ); 
+
+ 
+
+            $("#btn_show").click(function () {
+
+                $(this).calculator("show");
+            });
+
+
+            $("#btn_hide").click(function () {
+
+                $(this).calculator("hide");
+            });
+
+
+            $("#btn_remove").click(function () {
+
+                $(this).calculator("remove");
+            });
+
+
+            //   insert  show    hide   remove
+
+
+        });
+
+    </script>
+
+    
+  <script src="calculator-i18n.js" type="text/javascript"></script> 
+
+<script src="calculatrice_script.min.js" type="text/javascript"></script> 
+
+    
+   
+    <hr>
+
+</body>
+
+</html>
