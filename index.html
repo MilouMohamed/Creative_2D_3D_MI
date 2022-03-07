@@ -19,15 +19,22 @@
 
 
   
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+     
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <style>
+        #draggable { width: 150px; height: 150px; padding: 0.5em; }
+        </style>
+        
     <title>E Web Slo Kech</title>
 </head>
 
 <body>
+
     <div class="container">
         <br> <hr>
-        <h3>Med Milou3 g  20 pas minify avent</h3>
+        <h3>Med Milou3 g  20 pas minify avent 1 8 8 8 000</h3>
         <br> <hr><br>
 
         <button id="btn_insert" class="btn btn-success">Insert 1</button>
@@ -36,23 +43,23 @@
         <button id="btn_remove" class="btn btn-danger">remove 4</button>
 
     </div>
-
+  
+ 
 
         
-    <script type="text/javascript">
-
+    <script type="text/javascript"> 
         $(document).ready(function () {
 
-  
+               
 
             $("#btn_insert").calculator(
                 {
                     //  Is_draggable:false,
                     //  Is_resize:false,
-                    langue:"ar"  
+                        langue:"fr"  ,
+                    //  errorText:"msg de html"
                 }
             ); 
-
  
 
             $("#btn_show").click(function () {
@@ -80,10 +87,11 @@
 
     </script>
 
+
     
   <script src="calculator-i18n.js" type="text/javascript"></script> 
 
-<script src="calculatrice_script.min.js" type="text/javascript"></script> 
+<script src="calculatrice_script.js" type="text/javascript"></script> 
 
     
    
