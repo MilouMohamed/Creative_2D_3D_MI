@@ -524,12 +524,19 @@ Portfolio
         // $('#loader').fadeOut('slow');
         // $('.spinner').fadeOut('slow'); 
         $('.spinner').css('displan',"none"); 
+        $( '#loader').css('displan',"none"); 
         console.log("---------------------");
         console.log($('.spinner'));
         console.log("---------------------");
 
     }); // End Window Load
 })(jQuery, window, document);
+
+window.onload=()=>{
+    document.querySelector( '#loader').style.display="none";
+    document.querySelector( '.spinner').style.display="none";
+    console.log("****************");
+}
 
  
 
