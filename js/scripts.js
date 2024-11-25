@@ -219,6 +219,7 @@
         // Preloader 
         $('#loader').fadeOut('slow');
         $('.spinner').fadeOut('slow'); 
+        $('.spinner').fadeOut('slow'); 
     }); // End Window Load
     /* -------------------
     Page Hero Parallax
@@ -517,4 +518,27 @@ Portfolio
             // error
         });
     });
+    
+    $(window).load(function(){ 
+        // Preloader 
+        // $('#loader').fadeOut('slow');
+        // $('.spinner').fadeOut('slow'); 
+        $('.spinner').css('displan',"none"); 
+        console.log("---------------------");
+        console.log($('.spinner'));
+        console.log("---------------------");
+
+    }); // End Window Load
 })(jQuery, window, document);
+
+ 
+
+
+
+
+
+
+
+
+
+
